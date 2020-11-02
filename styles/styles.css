@@ -5,14 +5,13 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+
 hr{
-    width: 100%;
-    background: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    background-color: hsl(240, 5%, 91%);
+    height: 1px;
+    border: none;
     margin-bottom: 4%;
-    margin-top: 4%;    
+    margin-top: 4%;  
 }
 
 h2{
@@ -32,18 +31,25 @@ h2{
 }
 
 .main-div{
-    height: 500px;
+    height: auto;
     width: 950px;
     font-size: 24px;
-    background-color: azure;
+    background-color: white;
     display: flex;
     border-radius: 20px;
     box-shadow: 15px 30px 130px black;
     overflow: hidden;    
 }
 
-.IMG-DIV, .FAQ-DIV{
-    width: 50%;  
+
+
+.IMG-DIV, .FAQ-DIV {
+    width: 50%;
+    position: relative;    
+}
+
+.IMG-DIV{
+    padding-bottom: 170px;
 }
 
 .FAQ-DIV{
@@ -56,10 +62,14 @@ h2{
 .FAQ-QUESTIONS{
     display: flex;
     justify-content: space-between; 
-    background-color: azure;
+    background-color: white;
     border: none;
     outline: none;
     padding: 0;
+}
+
+.FAQ-QUESTIONS:hover{
+    cursor: pointer;
 }
 .FAQ-RELATIVE-DIV{
     position: relative;
@@ -105,9 +115,7 @@ h2{
 }
 
 #desktop-design{
-    position: relative;
-    bottom: 640px;
-    right: 550px;
+    position: absolute;
     z-index: 1;
 }
 
@@ -119,9 +127,12 @@ h2{
 }
 
 
-.desktop-img-design{
-    width: 200%;
-}
+.desktop-img-design {
+    width: 220%;
+      position: relative;
+      right: 640px;
+      bottom: 680px;
+  }
 
 /* Event Listener Classes*/
 
@@ -160,8 +171,8 @@ h2{
 @media (max-width: 800px){
 
     body{
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 180px;
+        padding-bottom: 180px;
     }
 
     hr{
@@ -173,15 +184,13 @@ h2{
         text-align: center;
     }
     .main-div{
-        height: 550px;
-        width: 375px;
+        width: 350px;
         font-size: 24px;
-        background-color: azure;
         display: flex;
         border-radius: 20px;
         box-shadow: 15px 30px 130px black;
         flex-direction: column;
-        overflow: hidden;
+        overflow: visible;
         justify-content: center;
         align-items: center;
         
@@ -194,12 +203,13 @@ h2{
         
     }
 
-    .FAQ-DIV{
-        padding-left: 13.4%;
+    .IMG-DIV{
+        padding-bottom: 110px;
     }
 
-    .IMG-DIV{
-        height: 15%;
+    .FAQ-DIV{
+        padding-left: 13.4%;
+        padding-bottom: 40px;
     }
 
     #woman-picture{
@@ -213,18 +223,17 @@ h2{
     #woman-picture-mobile{
         display: inline;
         position: absolute;
-        bottom: 455px;
-        right: 70px;
+        right: 25px;
+        bottom: 13px;
         z-index: 2;
     }
 
     #desktop-design-mobile{
         display: inline;
         position: absolute;
-        bottom: 430px;
-        right: 188px;
         width: 35%;
         z-index: 1;
+        right: 165px;
     }
 
  
