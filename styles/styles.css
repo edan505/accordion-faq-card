@@ -37,7 +37,7 @@ h2{
     background-color: white;
     display: flex;
     border-radius: 20px;
-    box-shadow: 15px 30px 130px black;
+    box-shadow: 9px 23px 100px #383838;
     overflow: hidden;    
 }
 
@@ -188,7 +188,6 @@ h2{
         font-size: 24px;
         display: flex;
         border-radius: 20px;
-        box-shadow: 9px 23px 100px #383838;
         flex-direction: column;
         overflow: visible;
         justify-content: center;
