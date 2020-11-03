@@ -168,7 +168,7 @@ h2{
 
 /*Media Queries - Mobile */
 
-@media (max-width: 800px){
+@media (max-width: 967px){
 
     body{
         padding-top: 180px;
@@ -188,7 +188,7 @@ h2{
         font-size: 24px;
         display: flex;
         border-radius: 20px;
-        box-shadow: 15px 30px 130px black;
+        box-shadow: 9px 23px 100px #383838;
         flex-direction: column;
         overflow: visible;
         justify-content: center;
